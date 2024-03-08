@@ -10,6 +10,19 @@ class Yatzy:
         total += d5
         return total
 
+    
+    @staticmethod
+    def crazyChance(d1, d2, d3, d4, d5):
+        total = 0
+        total += d1 * 3
+        total += d2 * 3
+        total += d3 * 3
+        total += d4 * 3
+        total += d5 * 3
+        return total
+
+    
+
     @staticmethod
     def yatzy(dice):
         counts = [0]*(len(dice)+1)
@@ -195,6 +208,7 @@ class Yatzy:
             return 20
         return 0
     
+
 
     @staticmethod
     def fullHouse( d1,  d2,  d3,  d4,  d5):
